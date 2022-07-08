@@ -3,17 +3,17 @@ const list = ['francesco@gmail.com', 'luigi@gmail.com', 'sara@gmail.com', 'jessi
 
 const eMail = prompt('inserisci la tua eMail');
 
-let verify = 'no';
+let verify = false;
 
 for (let i = 0; i < list.length; i++) {
 
         if (list[i]  == eMail) {
-            verify = 'ok';
+            verify = true;
         }
     
 }
 
-if (verify == 'ok') {
+if (verify == true) {
     alert('benvenuto/a!');
 } else {
     alert('la mail inserita non è in elenco');
